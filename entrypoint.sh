@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 cat <<EOF
 Welcome to the marvambass/nginx-ssl-secure container
