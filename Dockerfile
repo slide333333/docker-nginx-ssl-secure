@@ -2,8 +2,8 @@ FROM nginx:1.13-alpine
 
 ENV LANG C.UTF-8
 
-RUN apt-get update; apt-get install -y \
-    openssl
+RUN apk add --no-cache shadow \
+  openssl
 
 RUN rm -rf /etc/nginx/conf.d/*; \
     mkdir -p /etc/nginx/external
