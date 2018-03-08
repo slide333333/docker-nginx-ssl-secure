@@ -1,5 +1,4 @@
-FROM nginx
-MAINTAINER MarvAmBass
+FROM nginx:alpine
 
 ENV LANG C.UTF-8
 
