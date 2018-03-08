@@ -46,6 +46,9 @@ then
   -days 3650 -nodes -sha256
 fi
 
+# echo certificate details
+openssl x509 -in /etc/nginx/external/cert.pem -text
+
 echo ">> copy /etc/nginx/external/*.conf files to /etc/nginx/conf.d/"
 cp /etc/nginx/external/*.conf /etc/nginx/conf.d/ 2> /dev/null > /dev/null
 

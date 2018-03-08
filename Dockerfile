@@ -14,6 +14,7 @@ RUN sed -i 's/access_log.*/access_log \/dev\/stdout;/g' /etc/nginx/nginx.conf; \
 
 ADD basic.conf /etc/nginx/conf.d/basic.conf
 ADD ssl.conf /etc/nginx/conf.d/ssl.conf
+ADD default.conf /etc/nginx/conf.d/default.conf
 
 ADD entrypoint.sh /opt/entrypoint.sh
 RUN chmod a+x /opt/entrypoint.sh
